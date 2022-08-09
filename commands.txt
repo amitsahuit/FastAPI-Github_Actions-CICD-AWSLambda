@@ -1,12 +1,6 @@
 py -m venv venv
-pip install uvicorn
-pip install fastapi
+pip install -r requirements.txt
 uvicorn api.main:app --reload
-pip install pytest
-pip install requests
-pip freeze > requirements.txt
-pip install mangum
-
 
 aws configure
 aws s3 cp test.txt s3://fastapi123141415151/teste.txt
